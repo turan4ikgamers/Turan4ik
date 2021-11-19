@@ -1,0 +1,103 @@
+@media(prefers-color-scheme: dark) {
+    :root {
+        --primary-background: #151437;
+        --primary-text-color: #ffffff;   
+    }
+    .header__nav-log::before {
+        content: url(../images/logo_dark.png);
+    }
+    
+    body {
+        background: var(--primary-background);
+    }
+    
+    .header__content-text, .header__toggler-icon {
+        color: var(--primary-text-color);
+    }
+    .main__about-content, .main__about-description {
+        background: var(--primary-background);
+    }
+    .accordion__button.collapsed {
+        background: var(--primary-background) ip !important;
+        
+    }
+    
+    .footer__link, .footer__contact {
+        color: var(--primary-text-color);
+    }
+    
+    .main__works-link, .main__works-content {
+        background: var(--primary-background);
+    }
+    .main__works-link.active{
+        color: var(--primary-background);
+    }
+    .main__works-text {
+        color: var(--primary-text-color);
+    }
+    
+    
+ 
+}
+
+@media(max-width:992px) {
+    .header__nav-link, .header__nav-button {
+        margin-right: 0;
+        margin-bottom: 15px ;
+    }
+    .main__about-img {
+        width: 100%;
+    }
+    .main__works-content {
+        margin-top: 30px ;
+    }
+    
+    .accordion {
+        margin-bottom: 25px ;
+    }
+    
+    
+    .rectangel, .shape{
+        display: none;
+    }
+    .main__about-content {
+        margin-top: 30px ;
+    }
+    .main__about-text {
+        left: 240px ;
+        top: 0;
+    }
+}
+
+@media(max-width:375px) {
+    
+    .header__skills-title {
+        font-size: 16px ;
+    }
+    
+    .footer__contact {
+        font-size: 20px ;
+    }
+ 
+    }
+    
+    @media(max-width:475px) {
+        .main__about-text {
+        font-size: 16px ;    
+        left: 35px ;
+        top: -20px ;
+        padding: 20px ;
+    }
+    .main__about-link {
+        margin: 0 auto;
+    }
+    .main__works-name {
+        margin-top: 20px ;
+    }
+    .main__works-img {
+        object-fit: cover;
+    }
+    .main__about-title {
+        line-height: 45px ;
+    }
+}
